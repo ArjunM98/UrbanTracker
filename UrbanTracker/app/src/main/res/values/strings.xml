@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UrbanTracker</string>
+    <string name="date_selected"></string>
+    <string name="total"></string>
+    <string name="city">City</string>
+    <string-array name="cityNames">
+        <item>Kingston</item>
+        <item>Toronto</item>
+        <item>Ottawa</item>
+    </string-array>
+</resources>
+

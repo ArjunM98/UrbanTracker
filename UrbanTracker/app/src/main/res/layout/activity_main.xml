@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.urbantracker.arjunmittal.urbantracker">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Total"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="110dp"
+        android:id="@+id/total"
+        android:onClick="getTotal"
+        android:background="@null"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Heat"
+        android:id="@+id/heat"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/total"
+        android:layout_alignTop="@+id/total"
+        android:background="@null"
+        android:onClick="getTotalHeat" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:id="@+id/light"
+        android:layout_alignBottom="@+id/heat"
+        android:layout_toEndOf="@+id/heat"
+        android:layout_alignTop="@+id/heat"
+        android:background="@null"
+        android:onClick="getTotalLight" />
+
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Start Date: "
+        android:id="@+id/Start"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/heat"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="78dp"
+        android:elevation="0dp"
+        android:textStyle="bold|italic"
+        android:onClick="setDate"
+        android:layout_alignStart="@+id/total" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/textView"
+        android:text="Urban Tracker"
+        android:textSize="40sp"
+        android:layout_above="@+id/heat"
+        android:layout_alignStart="@+id/total" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_selected"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBaseline="@+id/Start"
+        android:layout_alignBottom="@+id/Start"
+        android:layout_toEndOf="@+id/Start" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:text="@string/total"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="87dp"
+        android:layout_above="@+id/Start"
+        android:textSize="70dp"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
